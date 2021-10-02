@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lists", "Lists\Lists.csproj", "{DDC55CDA-21D9-49EF-9A2B-973BE32C6603}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BetterStacksBecauseImCool", "BetterStacksBecauseImCool\BetterStacksBecauseImCool.csproj", "{90C50493-EF93-4874-8B94-A84D7CDFA14E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AllOfTheDataTypes", "AllOfTheDataTypes\AllOfTheDataTypes.csproj", "{F842C311-5371-4D13-9B16-3081402E1BA7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DDC55CDA-21D9-49EF-9A2B-973BE32C6603}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DDC55CDA-21D9-49EF-9A2B-973BE32C6603}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DDC55CDA-21D9-49EF-9A2B-973BE32C6603}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DDC55CDA-21D9-49EF-9A2B-973BE32C6603}.Release|Any CPU.Build.0 = Release|Any CPU
+		{90C50493-EF93-4874-8B94-A84D7CDFA14E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{90C50493-EF93-4874-8B94-A84D7CDFA14E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{90C50493-EF93-4874-8B94-A84D7CDFA14E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{90C50493-EF93-4874-8B94-A84D7CDFA14E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F842C311-5371-4D13-9B16-3081402E1BA7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F842C311-5371-4D13-9B16-3081402E1BA7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F842C311-5371-4D13-9B16-3081402E1BA7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F842C311-5371-4D13-9B16-3081402E1BA7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
