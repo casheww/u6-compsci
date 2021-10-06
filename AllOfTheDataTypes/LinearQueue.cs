@@ -16,7 +16,7 @@ namespace AllOfTheDataTypes
             if (IsEmpty)
                 _start = 0;
             else if (IsFull)
-                throw new OverflowException();
+                throw new Exception("Queue is full");
 
             _end++;
             _items[_end] = item;

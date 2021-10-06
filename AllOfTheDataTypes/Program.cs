@@ -7,6 +7,9 @@ namespace AllOfTheDataTypes
         static void Main(string[] args)
         {
             TestLinearQueue();
+            Console.WriteLine("\n\n\n");
+            TestCircularQueue();
+            Console.WriteLine("DONE");
         }
 
         private static void TestLinearQueue()
@@ -36,5 +39,34 @@ namespace AllOfTheDataTypes
             Console.WriteLine(lq);
             Console.WriteLine($"full? {lq.IsFull}");
         }
+
+        private static void TestCircularQueue()
+        {
+            Console.WriteLine("# CIRCULAR QUEUE TEST");
+            CircularQueue<int> cq = new CircularQueue<int>(8);
+
+            Console.WriteLine($"capacity: {cq.Capacity}");
+            Console.WriteLine($"empty? {cq.IsEmpty}");
+            Console.WriteLine($"full? {cq.IsFull}");
+
+            for (int i = 3; i < 8; i++)
+                cq.Enqueue(i);
+
+            Console.WriteLine(cq);
+            Console.WriteLine($"empty? {cq.IsEmpty}");
+            Console.WriteLine($"full? {cq.IsFull}");
+
+            for (int i = 0; i < 2; i++)
+                cq.Dequeue();
+
+            Console.WriteLine(cq);
+            
+            for (int i = 0; i < 5; i++)
+                cq.Enqueue(i);
+
+            Console.WriteLine(cq);
+            Console.WriteLine($"full? {cq.IsFull}");
+        }
+        
     }
 }
