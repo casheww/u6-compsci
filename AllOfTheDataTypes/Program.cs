@@ -6,30 +6,35 @@ namespace AllOfTheDataTypes
     {
         static void Main(string[] args)
         {
-            Queue<int> q = new Queue<int>(5);
+            TestLinearQueue();
+        }
+
+        private static void TestLinearQueue()
+        {
+            Console.WriteLine("# LINEAR QUEUE TEST");
+            LinearQueue<int> lq = new LinearQueue<int>(8);
+
+            Console.WriteLine($"capacity: {lq.Capacity}");
+            Console.WriteLine($"empty? {lq.IsEmpty}");
+            Console.WriteLine($"full? {lq.IsFull}");
+
+            for (int i = 3; i < 8; i++)
+                lq.Enqueue(i);
+
+            Console.WriteLine(lq);
+            Console.WriteLine($"empty? {lq.IsEmpty}");
+            Console.WriteLine($"full? {lq.IsFull}");
+
+            for (int i = 0; i < 2; i++)
+                lq.Dequeue();
+
+            Console.WriteLine(lq);
             
-            Console.WriteLine($"full? {q.IsFull}");
-            Console.WriteLine($"empty? {q.IsEmpty}");
-
-            for (int i = 0; i < q.MaxCapacity; i++)
-            {
-                q.Enqueue(i);
-            }
-
-            Console.WriteLine($"full? {q.IsFull}");
-            Console.WriteLine($"empty? {q.IsEmpty}");
-
             for (int i = 0; i < 3; i++)
-            {
-                q.TryDequeue(out int val);
-                Console.WriteLine($"removed {val}");
-            }
-            
-            Console.WriteLine($"full? {q.IsFull}");
-            Console.WriteLine($"empty? {q.IsEmpty}");
-            
-            
-            
+                lq.Enqueue(i);
+
+            Console.WriteLine(lq);
+            Console.WriteLine($"full? {lq.IsFull}");
         }
     }
 }
