@@ -36,8 +36,9 @@ namespace Recursion
 
         public IEnumerable<int> Numbers()
         {
-            yield return 10;
-            yield return 100;
+            yield return 1000;
+            yield return 5000;
+            yield return 10000;
         }
     }
     
