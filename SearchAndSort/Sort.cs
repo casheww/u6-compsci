@@ -1,50 +1,8 @@
-﻿using System;
-
-namespace Sorting
+namespace SearchAndSort
 {
-    class Program
+    public static class Sort
     {
-        static void Main(string[] args)
-        {
-            Console.WriteLine("Hello World!");
-
-            int[] numbres = new int[]
-            {
-                1,
-                6,
-                -237,
-                420,
-                -69,
-                389589,
-                -2498,
-                43
-            };
-            int[] numbres1 = new System.Collections.Generic.List<int>(numbres).ToArray();
-            
-            Console.WriteLine(string.Join(", ", numbres));
-
-            BubbleSort(numbres);
-            Console.WriteLine("bubble sort:  " + string.Join(", ", numbres));
-
-            numbres1 = MergeSort(numbres1);
-            Console.WriteLine("merge sort:  " + string.Join(", ", numbres1));
-
-            bool sameValues = true;
-            for (int i = 0; i < numbres.Length; i++)
-            {
-                if (numbres[i] != numbres1[i])
-                {
-                    sameValues = false;
-                    break;
-                }
-            }
-
-            Console.WriteLine($"same? {sameValues}");
-
-        }
-        
-
-        private static void BubbleSort(int[] array)
+        public static void BubbleSort(int[] array)
         {
             bool done;
             do
@@ -63,7 +21,7 @@ namespace Sorting
             } while (!done);
         }
 
-        private static int[] MergeSort(int[] array)
+        public static int[] MergeSort(int[] array)
         {
             if (array.Length < 3)
                 return array;
@@ -76,7 +34,7 @@ namespace Sorting
             return Merge(half0, half1);
         }
 
-        private static int[] Merge(int[] array0, int[] array1)
+        public static int[] Merge(int[] array0, int[] array1)
         {
             int resultLength = array0.Length + array1.Length;
             int[] result = new int[resultLength];
