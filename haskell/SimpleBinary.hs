@@ -1,4 +1,6 @@
 
+module SimpleBinary where
+    
 processBit :: Int -> Int -> Int
 processBit dec bit
     | bit == 0 = dec * 2
