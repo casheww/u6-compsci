@@ -21,5 +21,5 @@ main = do
     let dec = 196
     print ("dec : " ++ show dec)
     let bin = decToBin dec
-    print("bin : " ++ show bin)
+    print("bin : " ++ concatMap show bin)
     print("dec check : " ++ show (binToDec bin))
