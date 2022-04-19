@@ -1,3 +1,4 @@
+import Data.Time (getCurrentTime, diffUTCTime)
 
 isDiv x y
     | x == 0 = False
@@ -13,6 +14,4 @@ getPrimes :: Int -> [Int]
 getPrimes max = [n | n <- [2..max], isPrime n]
 
 
-main = do
-    let x = -10
-    print(getPrimes 20000)
+main = print(getPrimes 50000)
